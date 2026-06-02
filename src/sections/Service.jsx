@@ -1,7 +1,7 @@
 import React from "react";
 import maskBg from "../assets/mask-bg.png";
 import textImg from "../assets/text-fg.jpg";
-
+import IdealFactoryLogo from '../assets/idealFactory.png'
 import SolutionsMask from "../components/SolutionsMask";
 import { useScrollProgress } from "../hooks/useScrollProgress";
 
@@ -52,10 +52,12 @@ const Service = () => {
           }}
         >
           <div>
-            <img src="/idealFactory.png" className="h-[60px] mx-auto mb-6" />
+            <img src={IdealFactoryLogo} className="h-[60px] mx-auto mb-6" />
             <h2 className="text-4xl font-bold">Our Solutions</h2>
             <p className="mt-4 text-lg">
-              We provide all types of integrated services.
+              We provide all types of integrated
+              <br/>
+              <span>KITCHEN, CLOSET, DOOR</span> services.
             </p>
           </div>
         </div>

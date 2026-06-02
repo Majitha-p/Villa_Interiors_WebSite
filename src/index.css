@@ -1,0 +1,61 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --primary: 87 183 192;
+  --primary-hover: 78 206 206;
+    --primary-gra: #57b7c0;
+    /* --primary-hover: #4ecece; */
+
+     --background: #fff;
+    --foreground: #171717;
+    
+  --text-primary: #57B7C0;
+ 
+
+  --border-primary-hover: #57B7C0;
+  --border-primary: #e5e7eb;
+
+  --tap-highlight: #00000000;
+
+  
+
+    
+
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+  }
+}
+
+.text-white\/85 {
+  color: rgb(255 255 255 / 0.85);
+}
+
+
+
+
+

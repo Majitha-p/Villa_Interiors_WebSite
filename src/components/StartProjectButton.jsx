@@ -6,8 +6,8 @@ const StartProjectButton = ({ href = "/contact", className = "" }) => {
     <a
       href={href}
       className={`
-        hidden sm:inline-flex items-center gap-2
-        rounded-xl bg-primary/90 px-4 py-2.5
+        inline-flex items-center justify-center gap-2
+        rounded-xl bg-primary/80 px-4 py-2.5
         text-sm font-semibold text-[#062f34]
         transition hover:bg-primary
         whitespace-nowrap
@@ -15,7 +15,7 @@ const StartProjectButton = ({ href = "/contact", className = "" }) => {
       `}
     >
       <Phone className="h-4 w-4" />
-      Start Project
+      Start Your Project
     </a>
   );
 };

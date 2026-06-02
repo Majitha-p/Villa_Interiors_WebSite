@@ -16,14 +16,11 @@ const Navbar = () => {
     { href: "/#", label: "Contact Us" },
   ];
 
-  const toggleLanguage = () =>
-    setLanguage((p) => (p === "AR" ? "EN" : "AR"));
+  const toggleLanguage = () => setLanguage((p) => (p === "AR" ? "EN" : "AR"));
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 sm:pt-5">
-
       <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/10 bg-black/45 px-4 py-3 backdrop-blur-xl">
-
         {/* LEFT */}
         <div className="flex items-center gap-3">
           <button
@@ -51,21 +48,18 @@ const Navbar = () => {
 
         {/* RIGHT */}
         <div className="flex items-center gap-2">
+          <LanguageButton language={language} onToggle={toggleLanguage} />
 
-          <LanguageButton
-            language={language}
-            onToggle={toggleLanguage}
-          />
-
-          <StartProjectButton />
-
+          {/* SHOW ONLY ON sm+ (tablet + desktop) */}
+          <div className="hidden sm:block">
+            <StartProjectButton />
+          </div>
         </div>
       </nav>
 
       {/* MOBILE MENU */}
       {isOpen && (
         <div className="mx-auto mt-2 max-w-7xl rounded-2xl border border-white/10 bg-black/95 p-5 lg:hidden">
-
           <ul className="flex flex-col gap-2">
             {navLinks.map((l) => (
               <li key={l.href}>
@@ -81,13 +75,8 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile Actions */}
-          <div className="mt-4 flex flex-col gap-2">
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-[#062f34]"
-            >
-              Start Project
-            </a>
+          <div className="mt-4 flex flex-col gap-2 sm:hidden">
+            <StartProjectButton className="w-full" />
 
             <LanguageButton
               language={language}

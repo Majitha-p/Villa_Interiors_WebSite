@@ -1,6 +1,6 @@
 import React from "react";
 import { Globe, MapPin, Navigation, Mail, Phone } from "lucide-react";
-
+import FooterBg from '../assets/footerBg.jpg'
 import Logo from "../assets/idealFactory.png";
 
 const Footer = () => {
@@ -45,9 +45,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative isolate overflow-hidden bg-[#0A0A0A] text-white">
+    <footer className="relative isolate overflow-hidden bg-[#555252] text-white">
       <img
-        src="/footerBg.jpg"
+        src={FooterBg}
         alt="Footer Background"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />

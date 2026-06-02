@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -18,11 +15,10 @@ export default {
         border: "var(--border-primary)",
         "border-hover": "var(--border-primary-hover)",
       },
-       boxShadow: {
+      boxShadow: {
         soft: "0 24px 80px rgba(0,0,0,0.12)",
       },
-          
     },
   },
   plugins: [],
-}
+};

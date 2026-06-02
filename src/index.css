@@ -1,30 +1,21 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-
   --primary: 87 183 192;
   --primary-hover: 78 206 206;
-    --primary-gra: #57b7c0;
-    /* --primary-hover: #4ecece; */
+  --primary-gra: #57b7c0;
 
-     --background: #fff;
-    --foreground: #171717;
-    
-  --text-primary: #57B7C0;
- 
+  --background: #fff;
+  --foreground: #171717;
 
-  --border-primary-hover: #57B7C0;
+  --text-primary: #57b7c0;
+
+  --border-primary-hover: #57b7c0;
   --border-primary: #e5e7eb;
 
   --tap-highlight: #00000000;
-
-  
-
-    
-
 }
 
 @layer base {
@@ -43,19 +34,13 @@
   }
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
 
 .text-white\/85 {
   color: rgb(255 255 255 / 0.85);
 }
-
-
-
-
-

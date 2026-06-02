@@ -9,7 +9,7 @@ const Contact = () => {
         "Solutions designed for UAE villas",
     ];
     return (
-        <section className="bg-white px-6 py-16 sm:px-8 lg:px-16">
+        <section id='contact' className="bg-white px-6 py-16 sm:px-8 lg:px-16">
             <div className='mx-auto max-w-5xl'>
                 <div className="from-l-b relative isolate overflow-hidden rounded-3xl bg-linear-to-br bg-primary p-8 shadow-2xl shadow-primary-25 sm:p-12 lg:p-14">
                     <div className='relative grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]'>

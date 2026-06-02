@@ -4,7 +4,6 @@ import avatarSrc from "../assets/avatar.png";
 const ChatWidgetButton = ({
   onClick,
   className = "",
-  overlaySrc = "/images/headphones-overlay.svg",
   label = "Talk to a designer now",
 }) => {
   return (

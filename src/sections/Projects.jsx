@@ -2,8 +2,8 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 
 import img1 from "../assets/projectImages/image1.png";
-import img2 from "../assets/projectImages/image2.png";
-import img3 from "../assets/projectImages/image3.png";
+import img2 from "../assets/projectImages/Image2.png";
+import img3 from "../assets/projectImages/Image3.png";
 import img4 from "../assets/projectImages/image4.png";
 import img5 from "../assets/projectImages/image5.png";
 import img6 from "../assets/projectImages/image6.png";

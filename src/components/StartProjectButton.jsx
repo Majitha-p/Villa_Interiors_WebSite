@@ -1,7 +1,7 @@
 import React from "react";
 import { Phone } from "lucide-react";
 
-const StartProjectButton = ({ href = "/contact", className = "" }) => {
+const StartProjectButton = ({ href = "#", className = "" }) => {
   return (
     <a
       href={href}
